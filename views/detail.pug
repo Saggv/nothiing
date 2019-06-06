@@ -1,0 +1,49 @@
+doctype html
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/style/detail.css', type='text/css')
+a(href='#') Back
+.row
+  .col-md-7.images
+    .slider
+      #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100.h-500px(src= sigleroom.image, alt='...')
+          .carousel-item
+            img.d-block.w-100.h-500px(src='/images/hotel2.jpg', alt='...')
+          .carousel-item
+            img.d-block.w-100.h-500px(src='/images/hotel3.jpg', alt='...')
+        a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+  .col-md-5.content
+    h4.text-center= sigleroom.name
+    hr
+    b &Dstrok;&#x1ECB;a ch&#x1EC9; :
+    label= sigleroom.address
+    hr
+    b Description:
+    label= sigleroom.decription
+    hr
+    b Service:
+    label  Ph&#x1EE5;c v&#x1EE5; c&aacute;c b&#x1EEF;a &abreve;n h&agrave;ng ng&agrave;y v&agrave; m&#x1ED9;t s&#x1ED1; d&#x1ECB;ch v&#x1EE5; kh&aacute;c 
+    hr
+    b Price : 
+    label= sigleroom.price+ " dolar for one night"
+      span
+    hr
+    a(href='/buyform')
+      .btn.btn-primary.pl-5.pr-5  Booking
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

@@ -1,0 +1,119 @@
+/*nava */
+.navbar-nav{
+     margin:0 auto;
+ }
+ .nav-item a{
+     font-size: 20px;
+     font-weight: 700;
+     letter-spacing: 6px;
+ }
+ .nav-item{
+    padding:0 16px;
+ }
+ .nav-item:hover{
+      background-color: #fff;
+      border-radius: 7px;
+ }
+/*our best service */
+.ourbestproduct{
+    background-color: #F9FBE7;
+}
+.title{
+     text-align: right;
+}
+.title::after{
+      content: "";
+      width:50%;
+      height: 0.2em;
+      background-color:black;
+      display:block;
+     margin:0 50%;
+      margin-bottom: 3%;
+}
+.row{
+     clear: both;
+}
+.col-md-4{
+     padding: 2px;
+}
+.desciption{
+     background-color:rgba(224, 247, 250, 0.74);
+     margin-left: 3%;
+     transform:translateY(-50%);
+     border-radius: 5px;
+}
+.start.fas{
+    text-align: center;
+}
+/* Our service */
+.service{
+   padding:3%;
+}
+.icon{
+     float: left;
+     font-size: 40px;
+}
+.mission{
+   margin-left: 17%;
+   overflow: hidden;
+}
+/*Join us */
+.join{
+     width: 100%;
+     background-color: rgba(167, 255, 234, 0.349);
+     text-align: center;
+     padding:3%;
+}
+/* About us */
+.about {
+  padding: 4%;
+}
+.detail i{
+    margin-left: 40%;
+     transform: translate(0,-30%);
+     text-align: center;
+     font-size: 30px;
+     border:12px solid #fff;
+     border-radius: 50%;
+}
+/*experience */
+.experience{
+    padding:4%;
+    background-color:#B9F6CA;
+   
+}
+/*about team */
+.ourteam{
+     padding:4%;
+}
+.imagebox .social{
+     transform: translateY(-150%);
+     color:#fff;
+     opacity:0;
+}
+.social a{
+     color:#fff;
+     font-size: 24px;
+}
+.imagebox:hover .social{
+     opacity:1;
+}
+/*email */
+.email{
+    padding:4%;
+    /* background-color:rgba(100, 89, 29, 0.349); */
+    color:#fff;
+}
+
+input[type=email]{
+    margin:0 auto;
+     width: 70%;
+    border-radius: 9px;
+    background-color: black;
+}
+/*foodter */
+.foodter{
+    background-color:rgb(13, 13, 14);
+    padding: 1%;
+    color:#fff;
+}

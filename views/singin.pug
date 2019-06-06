@@ -1,0 +1,47 @@
+doctype html
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='./style/login.css', type='text/css')
+.container
+  .row
+    #login.col-md-7
+      h3.text-center=title
+      form(action='/signup' method="POST",)
+        .form-group
+          input(type="hidden", name="_id", value=users ? users._id : "")
+          label(for='')  Name
+          input.form-control(type='text', name='name', id='', aria-describedby='helpId', placeholder='Name', value= users ? users.name : "")
+        .form-check.form-check-inline
+          label.form-check-label
+            | Gi&#x1EDB;i T&iacute;nh
+            input.form-check-input(type='radio', name='gioitinh', id='', value=users ? users.gioitinh : "")
+            |  Nam
+          label.form-check-label
+            input.form-check-input(type='radio', name='gioitinh', id='', value=users ? users.gioitinh : "")
+            |  N&#x1EEF;
+        .form-group.mt-4
+          label(for='')  Adress
+          input.form-control(type='text', name='address', id='', aria-describedby='helpId', placeholder='Your address', value= users ? users.address : "")
+        .form-group
+          label(for='')  Email
+          input.form-control(type='email', name='email', id='', aria-describedby='helpId', placeholder='Your email', value=users ? users.email : "")
+        .form-group.mt-3
+          label(for='')  Account
+          input.form-control(type='text', name='account', id='', aria-describedby='helpId', placeholder='Your account', value=users ? users.account : "")
+        .form-group
+          label(for='')  Password
+          input.form-control(type='password', name='password', id='', aria-describedby='helpId', placeholder='Your password', value=users ? users.password : "")
+        .custom-file
+          input#customFile.custom-file-input(type='file', name='choosefile')
+          label.custom-file-label(for='customFile') Choose file
+
+        button.btn.btn-block.btn-danger.mt-4(type='submit') Singin
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

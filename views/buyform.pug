@@ -1,0 +1,40 @@
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='./style/buyform.css', type='text/css')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+.container
+  form( method="POST")
+    .form-group
+      label(for='') H&#x1ECD; T&ecirc;n
+      input(type='text', name='name', id='', placeholder='Tên của bạn')
+      br
+      label(for='') S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i
+      input(type='text', name='phone', id='', placeholder='Số điện thoại')
+      br
+      label(for='') Email
+      input(type='email', name='email', id='', placeholder='Email')
+      br
+      label(for='') L&#x1EF1;a ch&#x1ECD;n thanh to&aacute;n
+      select(name='thanhtoan', id='')
+        option Chuy&#x1EC3;n kho&#x1EA3;n
+        option Th&#x1EBB; ngh&acirc;n h&agrave;ng
+        option Bitcoin
+        option Chuy&#x1EC3;n kho&#x1EA3;n
+        option Ti&#x1EC1;n m&#x1EB7;t
+      br
+      label(for='') S&#x1ED1; t&agrave;i kho&#x1EA3;n
+      input(type='text', name='sotaikhoan', id='', placeholder='Số tài khoản')
+      br
+      button.btn.btn-block.btn-primary.mt-5(type='submit') Submit
+      a(href='/')
+        button.btn.btn-block.btn-danger.mt-3 Cancel
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

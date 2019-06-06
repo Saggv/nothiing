@@ -1,0 +1,8 @@
+#login{
+     transform: translateY(25%);
+    padding:6%;
+     margin: 0 auto;
+     background-color:#f6f6f6;
+     border-radius: 8px;
+     box-shadow: 0px 0px 16px black;
+}

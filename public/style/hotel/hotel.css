@@ -1,0 +1,80 @@
+/*nava */
+.navbar-nav{
+     margin:0 auto;
+}
+.nav-item a{
+     font-size: 20px;
+     font-weight: 700;
+     letter-spacing: 6px;
+}
+.nav-item{
+    padding:0 16px;
+}
+.nav-item:hover{
+      background-color: #fff;
+      border-radius: 7px;
+}
+.colum{
+    margin-top:30px;
+    padding: 0 2px;
+}
+.head img{
+   position: relative;
+    
+}
+.search{
+     width: 70%;
+     margin: 0 auto;
+     transform: translateY(-800%);
+}
+.search input{
+     border-radius: 9px;
+     text-align: center;
+     padding: 10px;
+}
+.fillform label{
+    display: inline-block;
+   
+}
+.fillform input{
+      margin-right: 9%;
+      margin-left: 2%;
+}
+.btn{
+    margin:0 auto;
+    padding:7px 15px;
+}
+.hearform{
+     padding: 3%;
+     background-color:#f6f6f6;
+     transform: translateY(-90%);
+     border-radius: 10px;
+}
+/* single room */
+.title::after{
+      content:"";
+      width: 40%;
+      height: 5px;
+      background-color: black;
+      display:block;
+}
+a{
+     text-decoration: none;
+}
+.detail{
+     background-color: rgba(255, 255, 0, 0.397);
+}
+/*double*/
+.doubleroom{
+     padding: 4%;
+}
+.detaildoubel{
+    background-color:rgba(51, 255, 0, 0.384);
+}
+/*familly rooms */
+.detailfamilyrom{
+     background-color: rgba(137, 43, 226, 0.548);
+}
+.family{
+    padding:4%;
+}

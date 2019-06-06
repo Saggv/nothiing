@@ -1,0 +1,110 @@
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='../style/hotel/hotel.css', type='text/css')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+// Nava
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Sagvv
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link(href='/')
+          | Home 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='/hotel') Hotel
+      li.nav-item
+        a.nav-link(href='/house') House
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='#') Restaurant
+// Header
+.head
+  img(src='/images/hotel7.jpg', width='100%', height='600px')
+  .container
+    .search
+      form
+        input.form-control(type='text', name='', id='', placeholder='Search')
+    form(action='/hotel/searchall', method='GET')
+      .row.hearform
+        .col-md-6
+          .form-group
+            label(for='') &Dstrok;&#x1ECB;a di&#x1EC3;m ho&#x1EB7;c kh&aacute;ch s&#x1EA1;n
+            input.form-control(type='text', name='namesearch', id='', aria-describedby='helpId', placeholder='Nhập địa điểm và nơi đến của bạn')
+        .col-md-3
+          .form-group
+            label(for='') Ng&agrave;y b&#x1EA1;n nh&#x1EAD;n ph&ograve;ng
+            input.form-control(type='text', name='', id='', aria-describedby='helpId', placeholder='dd/mm/yy')
+        .col-md-3
+          .form-group
+            label(for='') Ng&agrave;y tr&#x1EA3; ph&ograve;ng
+            input.form-control(type='text', name='', id='', aria-describedby='helpId', placeholder='dd/mm/yy')
+        button.btn.btn-danger search
+// Single room
+.singleroom
+  .container
+    a(href='/hotel/room')
+      h3.title  Single rom
+    .row.mt-5
+      each product in products
+        .col-md-4.colum.text-center
+          a(href='/detail/'+product._id)
+            img(src= product.image, width='100%', height='260px')
+          .detail
+            h5= product.name
+            p=product.address
+            span= product.price+"$/"
+              span night
+    nav.mt-4.mb-5.float-right(aria-label='Page navigation example ')
+      ul.pagination
+        li.page-item
+          a.page-link(href='#', aria-label='Previous')
+            span(aria-hidden='true') &laquo;
+        li.page-item
+          a.page-link(href='/hotel?page=1') 1
+        li.page-item
+          a.page-link(href='/hotel?page=2') 2
+        li.page-item
+          a.page-link(href='/hotel?page=3') 3
+        li.page-item
+          a.page-link(href='#', aria-label='Next')
+            span(aria-hidden='true') &raquo;
+
+
+
+.doubleroom
+  .container
+    h3.title Double rooms
+    .row.mt-5.text-center
+      each room in doubleroom
+        .col-md-4.colum
+          .detaildoubel
+            h5= room.name
+            span= room.price+" dolar for one night"
+          a(href='/detail/double/'+room._id)
+            img(src= room.image, width='100%', height='270px')
+
+// Family room
+.family
+  .container
+    h3.title Familly room
+    .row.text-center
+      each room in familyroom
+        .col-md-4.colum
+          a(href='/detail')
+            img(src= room.image, width='100%', height='270px')
+          .detailfamilyrom
+            h5= room.name
+            span= room.price +" dolar for one night "
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

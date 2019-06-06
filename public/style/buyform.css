@@ -1,0 +1,54 @@
+body{
+    background-image: url('../images/hotel4.jpg');
+    background-position: center;
+}
+.form-group{
+    width: 80%;
+    margin:0 auto;
+    background-color:#f6f6f6;
+    padding:6%;
+    padding-right: 4%;
+    border-radius:7px;
+    transform: translateY(10%);
+}
+a{
+     text-decoration: none;
+}
+label{
+    display:inline-block;
+    width: 30%;
+}
+input{
+    display:inline-block;
+    width: 69%;
+    background-color:#fff;
+    border: 0.5px solid rgba(54, 53, 53, 0.445);
+    border-radius: 5px;
+    margin:3% 0;
+    color:black;
+    padding:5px;
+}
+option{
+    margin: 40px;
+}
+select{
+    padding: 7px;
+    border-radius: 5px;
+}
+.btn{
+    margin: 0 auto;
+}
+@media only screen and (max-width: 500px){
+    label{
+         display: block;
+         width: 100%;
+    }
+    input{
+        display: block;
+        width: 100%;
+    }
+    .form-group{
+         width: 100%;
+         transform: translateY(5%);
+    }
+}

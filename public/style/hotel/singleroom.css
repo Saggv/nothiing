@@ -1,0 +1,85 @@
+body{
+    background-color:#eee8e89a;
+}
+/*nava */
+.navbar-nav{
+    margin:0 auto;
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+.nav-item{
+   padding:0 16px;
+}
+.nav-item:hover{
+     background-color: #fff;
+     border-radius: 7px;
+}
+.colum{
+   margin-top:30px;
+   padding: 0 2px;
+}
+.head img{
+  position: relative;
+   
+}
+.search{
+    width: 70%;
+    margin: 0 auto;
+    transform: translateY(-600%);
+}
+.search::after{
+     content: "Make your life for better";
+     text-align: center;
+     display:block;
+     width: 100%;
+     height: 30px;
+    font-size: 30px;
+    margin-bottom:10px
+}
+.search input{
+    border-radius: 9px;
+    text-align: center;
+    padding: 10px;
+}
+.fillform label{
+   display: inline-block;
+  
+}
+.fillform input{
+     margin-right: 9%;
+     margin-left: 2%;
+}
+.btn{
+   margin:0 auto;
+   padding:7px 15px;
+}
+.hearform{
+    padding: 3%;
+    background-color:#f6f6f6;
+    transform: translateY(-90%);
+    border-radius: 10px;
+}
+/*tilt */
+.title::after{
+    content:"";
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    display:block;
+}
+.detail i{
+     transform: translateY(-50%);
+     color:rgb(19, 33, 231);
+     font-size: 34px;
+     border:5px solid #fff;
+     border-radius: 50%;
+     background-color:#eee8e89a;
+     padding:10px;
+    
+}
+.detail{
+    background-color:#fff;
+}

@@ -1,0 +1,55 @@
+doctype html
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  
+// Nava
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Sagvv
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link(href='/')
+          | Home 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='/hotel') Hotel
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='house') House
+      li.nav-item
+        a.nav-link(href='#') Restaurant
+  if user
+    h6= user.name
+.container
+  h3.text-center.mt-5.mb-5 Danh sách thành viên
+  table.table
+    thead.thead-inverse
+      tr
+        th T&ecirc;n
+        th Địa chỉ
+        th Account
+        th Edit
+    each user in users
+      tbody
+        tr
+          td(scope='row')= user.name
+          td= user.address
+          td= user.account
+          td
+            a.mr-2(href='/user/edit/'+user._id)
+              i.fas.fa-edit(aria-hidden='true')
+            a(href='/user/delete/'+user._id)
+              i.fas.fa-trash-alt(aria-hidden='true')
+
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

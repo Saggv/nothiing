@@ -1,0 +1,27 @@
+doctype html
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='./style/login.css', type='text/css')
+.container
+  .row
+    #login.col-md-7
+      h5.text-center &Dstrok;&abreve;ng nh&#x1EAD;p
+      form(method="POST")
+        .form-group
+          h4= erroruser
+          label(for='')  Account
+          input.form-control(type='text', name='account', id='', aria-describedby='helpId', placeholder='Your account' value=value ? value.account : "")
+        .form-group
+          label(for='')  Password
+          input.form-control(type='password', name='password', id='', aria-describedby='helpId', placeholder='Your password' value =value ? value.password :"")
+        button.btn.btn-block.btn-primary.mt-5(type='submit') Login
+        button.btn.btn-block.btn-danger.mt-4(type='submit') Singin
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')

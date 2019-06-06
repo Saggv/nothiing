@@ -1,0 +1,264 @@
+head
+  title Title
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  link(rel='stylesheet', href='./style/homepage.css', type='text/css')
+// Nava
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Sagvv
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href='/')
+          | Home 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='/hotel') Hotel
+      li.nav-item
+        a.nav-link(href='/house') House
+      li.nav-item
+        a.nav-link(href='#') Restaurant
+      li.nav-item
+        a.nav-link(href='/user') User
+// slider
+.slider
+  #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100.h-500px(src='./images/hotel1.jpg', alt='...')
+      .carousel-item
+        img.d-block.w-100.h-500px(src='./images/hotel2.jpg', alt='...')
+      .carousel-item
+        img.d-block.w-100.h-500px(src='./images/hotel3.jpg', alt='...')
+    a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+// Our best product
+.ourbestproduct
+  .container
+    br
+    h3.title Our best service
+    .row
+      .col-md-5
+        .boximage
+          img(src='./images/hotel6.jpg', width='100%', height='300px')
+        .desciption
+          h5.text-center Hotel 
+          .btn.btn-block.btn-primary  Our best service
+          .start
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.far.fa-star.text-center
+      .col-md-7
+        .boximage
+          img(src='./images/hotel12.jpg', width='100%', height='300px')
+        .desciption
+          h5.text-center Housing 
+          .btn.btn-block.btn-primary  Our best service
+          .start
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.far.fa-star.text-center
+      .col-md-7
+        .boximage
+          img(src='./images/hotel9.jpg', width='100%', height='300px')
+        .desciption
+          h5.text-center Restaurant 
+          .btn.btn-block.btn-primary  Our best service
+          .start
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.far.fa-star.text-center
+      .col-md-5
+        .boximage
+          img(src='./images/hotel7.jpg', width='100%', height='300px')
+        .desciption
+          h5.text-center Service
+          .btn.btn-block.btn-primary  For better
+          .start
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.fas.fa-star.text-center
+            i.far.fa-star.text-center
+// Service
+.service
+  .container
+    h3.title Our service
+    .row
+      .col-md-4
+        .icon
+          i.fab.fa-servicestack
+        .mission
+          h5  Hotel service bigest 
+          p
+            | Voluptatum deleniti atque corrupti quos dolores
+            | et quas molestias excepturi sint occaecati cupiditate
+            | non provident
+      .col-md-4
+        .icon
+          i.fab.fa-usps
+        .mission
+          h5  Hotel service bigest 
+          p
+            | Voluptatum deleniti atque corrupti quos dolores
+            | et quas molestias excepturi sint occaecati cupiditate
+            | non provident
+      .col-md-4
+        .icon
+          i.fab.fa-scribd
+        .mission
+          h5  Hotel service bigest 
+          p
+            | Voluptatum deleniti atque corrupti quos dolores
+            | et quas molestias excepturi sint occaecati cupiditate
+            | non provident
+      .col-md-4
+        .icon
+          i.fab.fa-xbox
+        .mission
+          h5  Hotel service bigest 
+          p
+            | Voluptatum deleniti atque corrupti quos dolores
+            | et quas molestias excepturi sint occaecati cupiditate
+            | non provident
+      .col-md-4
+        .icon
+          i.fab.fa-xing
+        .mission
+          h5  Hotel service bigest 
+          p
+            | Voluptatum deleniti atque corrupti quos dolores
+            | et quas molestias excepturi sint occaecati cupiditate
+            | non provident
+      .col-md-4
+        .icon
+          i.fab.fa-steam
+        .mission
+          h5  Hotel service bigest 
+          p
+            | Voluptatum deleniti atque corrupti quos dolores
+            | et quas molestias excepturi sint occaecati cupiditate
+            | non provident
+// Join
+.join
+  h3  Join us now
+  p
+    | Let help us make the world to be better and tell with the
+    | world who are you. Share and Come here with your friend .
+  .btn.btn-block.btn-info Now
+// About us
+.about.us
+  .container
+    h3.title About us
+    .row
+      .col-md-4
+        .box
+          img(src='./images/hotel10.jpg', width='100%', height='200px')
+        .detail
+          i.fas.fa-bullseye
+          h4.text-center Our mission
+          p.text-center Make the your life better and create a world with a lot of laught
+      .col-md-4
+        .box
+          img(src='./images/hotel8.jpg', width='100%', height='200px')
+        .detail
+          i.far.fa-eye
+          h4.text-center Our Vision
+          p.text-center Make the your life better and create a world with a lot of laught
+      .col-md-4
+        .box
+          img(src='./images/hotel5.jpg', width='100%', height='200px')
+        .detail
+          i.fas.fa-hand-holding-heart
+          h4.text-center Our team
+          p.text-center Make the your life better and create a world with a lot of laught
+// Experience
+.experience
+  .container
+    h3.title  Our Experience
+    .progress.mt-5
+      .progress-bar.bg-danger(style='width:70%')
+      |  Our service
+    .progress.mt-4
+      .progress-bar.bg-info(style='width:90%')
+      |  Our quality
+    .progress.mt-4
+      .progress-bar.bg-secondary(style='width:60%')
+      |  Our skill
+    .progress.mt-4
+      .progress-bar.bg-warning(style='width:90%')
+      |  Our imagine
+// Team
+.ourteam
+  .container
+    h3.title Our team
+    .row.mt-5
+      .col-md-4.text-center
+        .imagebox
+          img.haha(src='images/boostrap.png', width='100%')
+          .social
+            h5 Boostrap
+            p Make this web
+            a(href='#')
+              i.fab.fa-facebook
+            a(href='#')
+              i.fab.fa-twitter
+            a(href='#')
+              i.fab.fa-google
+            a(href='#')
+              i.fab.fa-youtube
+      .col-md-4.text-center
+        .imagebox
+          img.haha(src='images/nodejs.png', width='100%', height='200px')
+          .social
+            h5 Boostrap
+            p Make this web
+            a(href='#')
+              i.fab.fa-facebook
+            a(href='#')
+              i.fab.fa-twitter
+            a(href='#')
+              i.fab.fa-google
+            a(href='#')
+              i.fab.fa-youtube
+      .col-md-4.text-center
+        .imagebox
+          img.haha(src='images/reactjs.png', width='100%')
+          .social
+            h5 Boostrap
+            p Make this web
+            a(href='#')
+              i.fab.fa-facebook
+            a(href='#')
+              i.fab.fa-twitter
+            a(href='#')
+              i.fab.fa-google
+            a(href='#')
+              i.fab.fa-youtube
+// Email
+.email
+  .container
+    input.form-control(type='email', name='', placeholder='Enter your email')
+    small#emailHelpId.form-text.text-muted.text-center We will contact with you
+// foodter
+.foodter
+  h5.text-center Make by S&aacute;ng
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
